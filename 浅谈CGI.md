@@ -19,8 +19,7 @@ echo "hello CGI"
 ```
 echo -e 参数是处理特殊字符，会把"\n"以换行符进行输出。
 
-问题：为什么要输出"Content-Type:text/html\n\n"？
-答：在[RFC3875](https://tools.ietf.org/html/rfc3875)中规定:"script MUST supply a Content-Type field in the response" 脚本响应时必须提供Content-Type字段。"\n\n"是分割HTTP协议中header与body的。
+问题：为什么要输出"Content-Type:text/html\n\n"？<br>答：在[RFC3875](https://tools.ietf.org/html/rfc3875)中规定:"script MUST supply a Content-Type field in the response" 脚本响应时必须提供Content-Type字段。"\n\n"是分割HTTP协议中header与body的。
 
 ---
 
@@ -95,8 +94,7 @@ echo $GATEWAY_INTERFACE
 
     当GET请求时，REQUEST_METHOD 为 GET；QUERY_STRING 为请求的参数和值，例如：
 
-    http://www.example.org/cgi-bin/demo.cgi/?name=cgi&version=1.1
-    QUERY_STRING 值为 name=cgi&version=1.1
+    http://www.example.org/cgi-bin/demo.cgi/?name=cgi&version=1.1<br>QUERY_STRING 值为 name=cgi&version=1.1
 
 * POST
 
