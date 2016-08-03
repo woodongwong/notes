@@ -1,3 +1,5 @@
+![CGI Logo](https://github.com/woodongwong/Blog/blob/master/Images/CGILogo.gif?raw=true)
+
 ### 1、什么是CGI？
 
 > 通用网关接口（Common Gateway Interface/CGI）是一种重要的互联网技术，可以让一个客户端，从网页浏览器向执行在网络服务器上的程序请求数据。CGI描述了服务器和请求处理程序之间传输数据的一种标准。最初，CGI是在1993年由美国国家超级电脑应用中心（NCSA）为NCSA HTTPd Web服务器开发的。这个Web服务器使用了UNIX shell 环境变量来保存从Web服务器传递出去的参数，然后生成一个运行CGI的独立的进程。CGI程序可以用任何脚本语言或者是完全独立编程语言实现，只要这个语言可以在这个系统上运行。像Unix shell script, Python, Ruby, PHP, Tcl, C/C++,和Visual Basic都可以用来编写CGI程序。（摘自[维基百科](https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3)）
@@ -122,9 +124,13 @@ echo $GATEWAY_INTERFACE
 
 ### 6、整体请求过程
 
-![request CGI](http://www.ci-link.com/doc_us/install/cgi.jpg)
-上图来自[http://www.ci-link.com/doc_us/install/cgi.htm](http://www.ci-link.com/doc_us/install/cgi.htm)
+![request CGI](https://github.com/woodongwong/Blog/blob/master/Images/RequestCGI.png?raw=true)
 
-注：在图中第3步，数据是通过[标准输出(STDOUT)](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81#.E6.A8.99.E6.BA.96.E8.BC.B8.E5.87.BA_.28stdout.29)，然后将数据重导向。具体实现涉及到了管道和dup2函数，本文不做详解。
+注：图中数据返回是通过[标准输出(STDOUT)](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81#.E6.A8.99.E6.BA.96.E8.BC.B8.E5.87.BA_.28stdout.29)，然后将数据重导向。具体实现涉及到了管道和dup2函数，本文不做详解。
+
+---
+
+___谢谢阅读！ 如有错误或者不好的地方麻烦指出。共同学习，共同进步~___
 
 （完）
+
